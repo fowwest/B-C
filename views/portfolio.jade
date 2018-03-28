@@ -1,0 +1,298 @@
+extends layout
+
+block content
+  // ================Header Menu Area =================
+  header.main_menu_area
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      a.navbar-brand(href='#')
+        img(src='img/logo.png', alt='')
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span
+        span
+        span
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link(href='/') Home
+          li.nav-item
+            a.nav-link(href='about-us') About Us
+          li.nav-item
+            a.nav-link(href='service') Services
+          li.nav-item
+            a.nav-link(href='portfolio') Portfolio
+          li.nav-item.dropdown.submenu.active
+            a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              | Blog
+            ul.dropdown-menu(aria-labelledby='navbarDropdown')
+              li.nav-item
+                a.nav-link(href='blog') Blog
+              li.nav-item
+                a.nav-link(href='single-blog') Blog Details
+              li.nav-item.active
+                a.nav-link(href='elements') Elements
+          li.nav-item
+            a.nav-link(href='contact') Contact
+  // ================End Header Menu Area =================
+  // ================Banner Area =================
+  section.banner_area
+    .container
+      .banner_inner_text
+        h2 Elements
+        p Get in touch
+  // ================End Banner Area =================
+  // ================Buttons Area =================
+  section.buttons_area.p_100
+    .container
+      h3.elements_title Buttons
+      a.more_btn(href='#') Discover
+      a.solid_btn(href='#') Discover
+      button.btn.submit_btn.form-control(type='submit', value='submit') Discover
+  // ================End Buttons Area =================
+  // ================Progress Bar Area =================
+  section.progress_bar_area
+    .container
+      h3.elements_title Progress Bars & Accordions 
+      .row
+        .col-lg-6
+          .company_skill
+            .our_skill_inner
+              .single_skill
+                h3 Development
+                .progress(data-value='70')
+                  .progress-bar
+                    .progress_parcent
+                      span.counter 70
+                      | %
+              .single_skill
+                h3 Design
+                .progress(data-value='90')
+                  .progress-bar
+                    .progress_parcent
+                      span.counter 90
+                      | %
+              .single_skill
+                h3 SEO
+                .progress(data-value='85')
+                  .progress-bar
+                    .progress_parcent
+                      span.counter 85
+                      | %
+              .single_skill
+                h3 Development
+                .progress(data-value='90')
+                  .progress-bar
+                    .progress_parcent
+                      span.counter 90
+                      | %
+              .single_skill
+                h3 Management
+                .progress(data-value='75')
+                  .progress-bar
+                    .progress_parcent
+                      span.counter 75
+                      | %
+        .col-lg-6
+          #accordion.solution_collaps(role='tablist')
+            .card
+              #headingOne.card-header(role='tab')
+                h5.mb-0
+                  a(data-toggle='collapse', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                    | Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis
+                    i.minus -
+                    i.plus +
+              #collapseOne.collapse.show(role='tabpanel', aria-labelledby='headingOne', data-parent='#accordion')
+                .card-body
+                  p
+                    | Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit.
+            .card
+              #headingTwo.card-header(role='tab')
+                h5.mb-0
+                  a.collapsed(data-toggle='collapse', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                    | Sed dapibus nunc vulputate mi fringilla, eu consequat
+                    i.minus -
+                    i.plus +
+              #collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo', data-parent='#accordion')
+                .card-body
+                  p
+                    | Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit.
+            .card
+              #headingThree.card-header(role='tab')
+                h5.mb-0
+                  a.collapsed(data-toggle='collapse', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                    | Curabitur eu libero sed erat viverra gravida at id ex
+                    i.minus -
+                    i.plus +
+              #collapseThree.collapse(role='tabpanel', aria-labelledby='headingThree', data-parent='#accordion')
+                .card-body
+                  p
+                    | Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit.
+  // ================End Progress Bar Area =================
+  // ================Circle Chart Area =================
+  section.circle_chart_area
+    .container
+      h3.elements_title Loaders 
+      .row
+        .col-lg-3.col-sm-6
+          .circle_progress.circular.style-polygon(data-percentage='75', data-thickness='3', data-reverse='true', data-empty-fill='transparent', data-start-color='#987dff', data-end-color='#7acaff')
+            .circle_progress_inner
+              strong
+              span.percentage
+              h4 Hard work
+        .col-lg-3.col-sm-6
+          .circle_progress.circular.style-polygon(data-percentage='83', data-thickness='3', data-reverse='true', data-empty-fill='transparent', data-start-color='#987dff', data-end-color='#7acaff')
+            .circle_progress_inner
+              strong
+              span.percentage
+              h4 Creativity
+        .col-lg-3.col-sm-6
+          .circle_progress.circular.style-polygon(data-percentage='25', data-thickness='3', data-reverse='true', data-empty-fill='transparent', data-start-color='#987dff', data-end-color='#7acaff')
+            .circle_progress_inner
+              strong
+              span.percentage
+              h4 Good luck
+        .col-lg-3.col-sm-6
+          .circle_progress.circular.style-polygon(data-percentage='95', data-thickness='3', data-reverse='true', data-empty-fill='transparent', data-start-color='#987dff', data-end-color='#7acaff')
+            .circle_progress_inner
+              strong
+              span.percentage
+              h4 Development
+  // ================End Circle Chart Area =================
+  // ================Mileston Area =================
+  section.mileston_area
+    .container
+      h3.elements_title Milestones
+      .row
+        .col-lg-3.col-sm-6
+          .mileston_item
+            h4
+              span.counter 25
+              | K
+            h5 Followers
+        .col-lg-3.col-sm-6
+          .mileston_item
+            h4
+              span.counter 130
+            h5 Clients
+        .col-lg-3.col-sm-6
+          .mileston_item
+            h4
+              span.counter 238
+            h5 Projects
+        .col-lg-3.col-sm-6
+          .mileston_item
+            h4
+              span.counter 12
+            h5 Years of experience
+  // ================End Mileston Area =================
+  // ================End Banner Area =================
+  section.service_feature.element_service
+    .container
+      h3.elements_title Icon boxes 
+      .row.feature_inner
+        .col-lg-4.col-md-6
+          .feature_item
+            .f_icon
+              img(src='img/icon/f-icon-4.png', alt='')
+            h4 Video Support
+            p
+              | Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.
+            a.more_btn(href='#') Read More
+        .col-lg-4.col-md-6
+          .feature_item
+            .f_icon
+              img(src='img/icon/f-icon-5.png', alt='')
+            h4 Fast Support
+            p
+              | Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.
+            a.more_btn(href='#') Read More
+        .col-lg-4.col-md-6
+          .feature_item
+            .f_icon
+              img(src='img/icon/f-icon-6.png', alt='')
+            h4 Download test
+            p
+              | Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.
+            a.more_btn(href='#') Read More
+  // ================End Banner Area =================
+  // ================Footer Area =================
+  footer.footr_area
+    .footer_widget_area
+      .container
+        .row.footer_widget_inner
+          .col-lg-4.col-sm-6
+            aside.f_widget.f_about_widget
+              img(src='img/footer-logo.png', alt='')
+              p
+                | Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum.
+          .col-lg-4.col-sm-6
+            aside.f_widget.f_insta_widget
+              .f_title
+                h3 Instagram
+              ul
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-1.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-2.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-3.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-4.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-5.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-6.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-7.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-8.jpg', alt='')
+          .col-lg-4.col-sm-6
+            aside.f_widget.f_subs_widget
+              .f_title
+                h3 Subscribe to newsletter
+              .input-group
+                input.form-control(type='text', placeholder='Your e-mail address here', aria-label='Your e-mail address here')
+                span.input-group-btn
+                  button.btn.btn-secondary.submit_btn(type='button') Subscribe
+    .footer_copyright
+      .container
+        .float-sm-left
+          h5
+            // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+            | Copyright ©
+            script.
+              document.write(new Date().getFullYear());
+            |  All rights reserved | This template is made with 
+            i.fa.fa-heart-o(aria-hidden='true')
+            |  by 
+            a(href='https://colorlib.com', target='_blank') Colorlib
+            // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+        .float-sm-right
+          ul
+            li
+              a(href='#')
+                i.fa.fa-pinterest
+            li
+              a(href='#')
+                i.fa.fa-facebook
+            li
+              a(href='#')
+                i.fa.fa-twitter
+            li
+              a(href='#')
+                i.fa.fa-dribbble
+            li
+              a(href='#')
+                i.fa.fa-behance
+            li
+              a(href='#')
+                i.fa.fa-linkedin
+  // ================End Footer Area =================
+

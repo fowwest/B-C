@@ -1,0 +1,254 @@
+extends layout
+
+block content
+  header.main_menu_area
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      a.navbar-brand(href='#')
+        img(src='img/logo.png', alt='')
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span
+        span
+        span
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link(href='/') Home
+          li.nav-item.active
+            a.nav-link(href='about-us') About Us
+          li.nav-item
+            a.nav-link(href='service') Services
+          li.nav-item
+            a.nav-link(href='portfolio') Portfolio
+          li.nav-item.dropdown.submenu
+            a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              | Blog
+            ul.dropdown-menu(aria-labelledby='navbarDropdown')
+              li.nav-item
+                a.nav-link(href='blog') Blog
+              li.nav-item
+                a.nav-link(href='single-blog') Blog Details
+              li.nav-item
+                a.nav-link(href='elements') Elements
+          li.nav-item
+            a.nav-link(href='contact') Contact
+  // ================End Header Menu Area =================
+  // ================Banner Area =================
+  section.banner_area
+    .container
+      .banner_inner_text
+        h2 About Us
+        p Get to know us
+  // ================End Banner Area =================
+  // ================Challange Area =================
+  section.challange_area.p_100
+    .container-fluid
+      .row
+        .col-lg-6
+          .challange_text_inner
+            .l_title
+              img(src='img/icon/title-icon.png', alt='')
+              h6 Discover the features
+              h2 We don’t hide, we stand tall in front of chalenge
+            p
+              | Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis viverra a eget nisi. Aenean pellentesque elit vitae eros dignissim ultrices.
+            .c_video
+              a.popup-youtube(href='https://www.youtube.com/watch?v=62QYQE6k7tg')
+                img(src='img/icon/video-icon.png', alt='')
+                | See how we work
+        .col-lg-6.challange_img
+          .challange_img_inner
+            img.img-fluid(src='img/popup-photo.jpg', alt='')
+  // ================End Challange Area =================
+  // ================Testimonials Slider Area =================
+  section.testimonials_area
+    .container
+      .testimonials_slider.owl-carousel
+        .item
+          .testi_item
+            h3 “Simply professionals”
+            p
+              | Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus.
+            .media
+              .d-flex
+                img.rounded-circle(src='img/testimonials/testi-1.jpg', alt='')
+              .media-body
+                h4 Maria Smith
+                h5 CEO Enterprise
+        .item
+          .testi_item
+            h3 “They are the best”
+            p
+              | Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus.
+            .media
+              .d-flex
+                img.rounded-circle(src='img/testimonials/testi-2.jpg', alt='')
+              .media-body
+                h4 Chriss Turner
+                h5 CEO Enterprise
+        .item
+          .testi_item
+            h3 “We just love them”
+            p
+              | Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus.
+            .media
+              .d-flex
+                img.rounded-circle(src='img/testimonials/testi-3.jpg', alt='')
+              .media-body
+                h4 Julie Smart
+                h5 CEO Enterprise
+        .item
+          .testi_item
+            h3 “Simply professionals”
+            p
+              | Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus.
+            .media
+              .d-flex
+                img.rounded-circle(src='img/testimonials/testi-1.jpg', alt='')
+              .media-body
+                h4 Maria Smith
+                h5 CEO Enterprise
+  // ================End Testimonials Slider Area =================
+  // ================We Are Company Area =================
+  section.we_company_area.p_100
+    .container
+      .row.company_inner
+        .col-lg-6
+          .left_company_text
+            .l_title
+              img(src='img/icon/title-icon.png', alt='')
+              h6 Discover the features
+              h2
+                | We are a 
+                span Gibraltar
+                |  based Company
+            p
+              | Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis viverra a eget nisi. Aenean pellentesque elit vitae eros dignissim ultrices.
+        .col-lg-6
+          .company_skill
+            p
+              | Etiam nec odio vestibulum est mattis effic iturut magna. Pellente sque sit am et tellus blandit. Etiam nec odio vestibul.
+            .our_skill_inner
+              .single_skill
+                h3 Development
+                .progress(data-value='70')
+                  .progress-bar
+                    .progress_parcent
+                      span.counter 70
+                      | %
+              .single_skill
+                h3 Design
+                .progress(data-value='90')
+                  .progress-bar
+                    .progress_parcent
+                      span.counter 90
+                      | %
+              .single_skill
+                h3 SEO
+                .progress(data-value='85')
+                  .progress-bar
+                    .progress_parcent
+                      span.counter 85
+                      | %
+              .single_skill
+                h3 Development
+                .progress(data-value='90')
+                  .progress-bar
+                    .progress_parcent
+                      span.counter 90
+                      | %
+              .single_skill
+                h3 Management
+                .progress(data-value='75')
+                  .progress-bar
+                    .progress_parcent
+                      span.counter 75
+                      | %
+  // ================End We Are Company Area =================
+  // ================End We Are Company Area =================
+  section.talk_area
+    .container
+      .talk_text
+        h4 Are you ready to talk?
+        a(href='mailto:contact@sierracompany.com') contact@sierracompany.com
+  // ================End We Are Company Area =================
+  // ================Footer Area =================
+  footer.footr_area
+    .footer_widget_area
+      .container
+        .row.footer_widget_inner
+          .col-lg-4.col-sm-6
+            aside.f_widget.f_about_widget
+              img(src='img/footer-logo.png', alt='')
+              p
+                | Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum.
+          .col-lg-4.col-sm-6
+            aside.f_widget.f_insta_widget
+              .f_title
+                h3 Instagram
+              ul
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-1.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-2.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-3.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-4.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-5.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-6.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-7.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='img/instagram/ins-8.jpg', alt='')
+          .col-lg-4.col-sm-6
+            aside.f_widget.f_subs_widget
+              .f_title
+                h3 Subscribe to newsletter
+              .input-group
+                input.form-control(type='text', placeholder='Your e-mail address here', aria-label='Your e-mail address here')
+                span.input-group-btn
+                  button.btn.btn-secondary.submit_btn(type='button') Subscribe
+    .footer_copyright
+      .container
+        .float-sm-left
+          h5
+            // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+            | Copyright ©
+            script.
+              document.write(new Date().getFullYear());
+            |  All rights reserved | This template is made with 
+            i.fa.fa-heart-o(aria-hidden='true')
+            |  by 
+            a(href='https://colorlib.com', target='_blank') Colorlib
+            // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+        .float-sm-right
+          ul
+            li
+              a(href='#')
+                i.fa.fa-pinterest
+            li
+              a(href='#')
+                i.fa.fa-facebook
+            li
+              a(href='#')
+                i.fa.fa-twitter
+            li
+              a(href='#')
+                i.fa.fa-dribbble
+            li
+              a(href='#')
+                i.fa.fa-behance
+            li
+              a(href='#')
+                i.fa.fa-linkedin
+  // ================End Footer Area =================
